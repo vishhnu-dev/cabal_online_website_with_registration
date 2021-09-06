@@ -1,0 +1,345 @@
+/*===============================*/
+/*   Vishnu-dev 01/08/2021       */
+/*===============================*/
+/* Regras Gerais da Aplicação */
+/* body  */
+.body { 
+    background-color: #ffffff; 
+    font-family: 'Roboto', sans-serif; 
+    background-image: url('../img/background2.jpg');
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+.body button { outline: none !important; }
+.body a:hover; { text-underline: none; }
+.body a:visited { color: #fff; }
+
+.zoom { transition: transform .3s; }
+.zoom:hover { -ms-transform: scale(1.2); -webkit-transform: scale(1.2); transform: scale(1.2) }
+.zoom:hover, h2 { display: color: #fff; }
+@media screen and (max-width: 480px){
+    .zoom { transition: none; }
+    .zoom:hover { transform: none; }
+}
+/*===============================*/
+.logo {
+    color: coral;
+    line-height: 0;
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: 45px;
+}
+.g-recaptcha_ar {
+    height: 76px;
+    border-radius: unset;
+    background-color: #fff;
+    width: 270px;
+}
+
+.main-color { color: #ffd700; } 
+.white-color { color: #FFF; }
+.black-color { color: #000; }
+.main-bg { background-color: #212121; }
+.white-bg { background-color: #FFFFFF; }
+.black-bg { background-color: #000000; }
+.no-bg { background-color: transparent !important; }
+.text-bold {font-weight: bold;}
+.padding15 { padding: 15px; }
+.icon-size { font-size: 22px !important; }
+.info { font-size: 18px; }
+.btn-close {
+    padding: 12px 50px;
+}
+.background {
+    background-image: url('img/background.jpg');
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    height: 450px !important;
+    background-position: bottom;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 81%);
+}
+.link {
+    text-underline: none;
+    color: white;
+}
+.link:hover {
+    color: coral;
+    text-underline: none;
+    text-decoration: none;
+}
+.link:focus { color: coral !important; }
+/*===============================*/
+/* END */
+
+/* Header */
+.pre-header {background-color: rgb(33, 33, 33, 0.5)}
+.pre-header i { 
+    font-size: 30px; 
+    color: #fff; 
+    margin: 15px 0px;
+    margin-top: 15px;
+}
+.pre-header a:hover i{
+    color: coral !important;
+} 
+
+/* Dowload */
+.header {
+    background-color: rgb(33, 33, 33, 0.5)
+}
+.header .presentation a {
+    font-size: 20px;
+}
+@media (max-width: 480px) {
+    .header .sv-br { 
+        margin-top: 25px;
+    }
+}
+.header .menu {margin: 10px; border: none !important;}
+.header .menu a:visited {color: coral !important;}
+.header .menu a:visited {color: coral !important;}
+@media (max-width: 480px) {
+    .header .menu .presentation {margin-top: 15px;}    
+}
+.header .menu a { font-size: 22px; }
+.pre-header .download button {
+    border: none !important;
+    background-color: #000!important;
+    padding: 5px 20px;
+    font-size: 27px;
+    margin: 10px 0px;
+    border-radius: 15px;
+}
+.pre-header .download button {
+    font-weight: bold;
+}
+.pre-header .download button:hover {
+    background-color: #fff !important;
+    color: coral !important;
+}
+.pre-header .download button:hover i{ color: coral; }
+/* END */
+/*===============================*/
+/* Conteúdo */
+.content { color: #fff; background-color: rgb(33, 33, 33, 0.1)}
+.content .login-form, .content .newaccount-form {
+    padding: 0px 15px;
+}
+/* Login */
+.content .login-request {
+    padding: 50px;
+    border-radius: 100px 0px 0px 0px;
+    border-top: 3px solid #212121;
+    border-left: 3px solid #212121;
+}
+.content .login-request:hover {
+    border-top: 3px solid coral;
+    border-left: 8px solid coral;
+}
+/* Formulários */
+.content .formulario-box {
+    height: 535px;
+    margin-left: 0px;
+
+}
+@media (max-width: 991px) {
+    .content .formulario-box {
+        height: 100%;
+    }
+}
+.content .formulario-box button {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 12px 0px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-top: -2px;
+}
+.content .formulario-box button:hover {
+    background-color: #fff !important;
+    color: coral;
+}
+
+/* Formulário de login */
+.content .login-request:hover .content .formulario-box {
+    display: block !important;
+}
+/*END*/
+
+/* Registrar */
+.content .new-account-request {
+    padding: 50px;
+    border-radius: 0px 0px 0px 100px;
+    border-bottom: 3px solid #212121;
+    border-left: 3px solid #212121;
+}
+.content .new-account-request:hover {
+    border-bottom: 3px solid coral;
+    border-left: 8px solid coral;
+}
+.content .login-request .btn-primary {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 12px 0px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.content .login-request .btn-primary:hover {
+    background-color: #fff !important;
+    color: coral;
+}
+.content .new-account-request .btn-primary {
+    border: 1px solid #fff;
+    font-size: 20px;
+    padding: 12px 0px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;   
+}
+.content .new-account-request .btn-primary:hover {
+    background-color: #fff !important;
+    color: coral;   
+}
+
+.br-flag {
+    height: 65px;
+    margin-top: -85px;
+    margin-right: 115px;
+}
+/* END */
+/*===============================*/
+/*Welcome section*/
+.legal-text {background-color: rgb(33, 33, 33, 0.5)}
+.legal-text .img { text-align: right; }
+.legal-text  small {    
+    font-size: 35px;
+    font-weight: bolder;
+}
+.legal-text p {
+    font-size: 15px;
+    color: #7cd09f;
+    font-weight: bold; 
+    margin-top: 70px;
+}
+    @media (max-width: 991px) {
+        .legal-text .img {
+            text-align: center;
+        }
+    }
+/*END*/
+
+/*===============================*/
+/* Footer */
+.footer {padding: 60px 0px; background-color: rgb(33, 33, 33, 0.5);}
+.footer .row {padding: 15px 0px;}
+.footer p {margin-bottom: 0px; font-size: 19px;}
+.footer small {font-size: 19px !important;}
+@media (max-width: 480px) {
+    .footer p {text-align: left;}
+}
+/*===============================*/
+/*END*/
+
+/* Mobile */
+.mobile-mode {
+    background-color: rgb(33, 33, 33);
+}
+@media (max-width: 480px) {
+    .mobile-mode i {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .mobile-none {
+        display: none !important  }
+}
+.mobile-mode button {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 15px 15px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 10px;
+}
+/*===============================
+
+/* discord-pop-up */
+.discord-pop-up { 
+    position:fixed;
+    bottom: 5px;
+    left: 65px;
+    z-index: 9999;
+}
+/* whatsapp pop-up */
+.whats-pop-up {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:5px;
+    left:5px;
+    background-color:#25d366;
+    border-radius:50px;
+    text-align:center;
+    z-index:1000;
+}
+.whats-pop-up .fa-whatsapp {
+    margin-top: 13px;
+    font-size: 35px;
+    color: #FFF;
+}
+/* arrow-up pop-up*/ 
+.ancor-up {
+    cursor: pointer;
+    position:fixed;
+    width:50px;
+    height:50px;
+    bottom: 68px;
+    left: 10px;
+    background-color: coral;
+    border-radius:50px;
+    text-align:center;
+    display: none;
+    z-index: 9999;
+}
+.ancor-up .fa-arrow-up {
+    margin-top: 6px;
+    font-size: 35px;
+    color: #fff;
+}
+.e-girl {
+    height: 200px;
+    margin-top: -60px;
+}
+@media (max-width: 991px){
+    .e-girl {
+        height: 136px;
+        height: 229px;
+        margin-top: -41px;
+    }
+}
+@media (max-width: 768px){
+    .ashura {
+        margin-top: 0px;
+    }
+    .vishnu {
+        text-align: left !important;
+    }
+}
+
+.apply-effect {
+    background-color: #212121;
+    -webkit-transition: all .4s linear;
+    -moz-transition: all .4s linear;
+    -o-transition: all .4s linear;
+    transition: all .4s linear;
+}
+.apply-effect-2 {
+    background-color: #212121;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    transition: all .5s linear;
+}
