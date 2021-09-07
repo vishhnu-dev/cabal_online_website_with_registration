@@ -52,7 +52,6 @@ $(document).ready( function() {
 				data: arcandius_data_form,
 				timeout: 8000,
 	      success: function(data) {
-	      	console.log(data);
           if(data.type == 'error') {
             console.log(data);
           }else{

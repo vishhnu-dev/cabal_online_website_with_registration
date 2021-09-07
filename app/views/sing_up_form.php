@@ -78,11 +78,11 @@
             <div class="form-group error-land">
                 <div class="input-group">
                     <div class="input-group-addon">
-                        <i class="fa fa-key black-color icon-size" data-toggle="tooltip" data-placement="left" data-original-title="Apenas letras">
+                        <i class="fa fa-key black-color icon-size" data-toggle="tooltip" data-placement="left" data-original-title="Mínimo 6 caracteres">
                             *
                         </i>
                     </div>
-                    <input autocomplete="off" name="user_securytitoken" type="text" class="form-control required input-lg text-lowercase" id="user_securytitoken" placeholder="Chave de segurança*" data-toggle="tooltip" data-placement="left" data-original-title="Apenas Letras">
+                    <input autocomplete="off" name="user_securytitoken" type="text" class="form-control required input-lg text-lowercase" id="user_securytitoken" placeholder="Chave de segurança*" data-toggle="tooltip" data-placement="left" data-original-title="Seu Token(Apenas Letras) min: 6">
                 </div>
             </div>
         </div>

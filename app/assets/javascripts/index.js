@@ -105,17 +105,17 @@ $(document).ready(function(){
   	// MASCARA DE TELEFONE //
 	/////////////////////////
 	let pwdbehavior = function (val) {
-	    return val.replace(/\D/g, '').length == 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+	    return val.replace(/\D/g, '').length == 11 ? '+00 (00) 00000-0000' : '+00 (00) 0000-00009';
 	},
 	pwdptions = {
-	    placeholder: "(__) _____-____",
+	    placeholder: "+55 (51) 00110-00109",
 	    onKeyPress: function(val, e, field, options) {
 	        field.mask(pwdbehavior.apply({}, arguments), options);
       	}
 	}
 	$('.phone_with_ddd').mask(pwdbehavior, pwdptions);
 
-	$('#user_securytitoken').mask('SSSSSS', {placeholder: "SSSSSS"});
+	$('#user_securytitoken').mask('SSSSSS', {placeholder: "Apenas Letras"});
 
 	$('.email').mask("A", {
 		translation: {
