@@ -157,8 +157,30 @@
 		// $output = json_encode(array('type' => 'error', 'text' => hash('sha256', $_POST['user_password'])));
   //   die($output);
 
-			$login = 0;
+
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 			require 'config/db.php';
+			$login = 0;
+			$username_select = $_POST['user_username'];
+			$email_select = $_POST['user_email'];
+			// CHECK USERNAME ALREADY IN USE
+			// $username_sql = "SELECT * FROM dbo.cabal_auth_table WHERE ID='".$username_select."' ";
+   // 		if ($result = sqlsrv_query($conn, $username_sql) !== false) {
+			// 	$output = json_encode(array('type' => 'error', 'text' => 'Username em uso !'));
+   //  		die($output);
+			// }else{
+			// 	 die( print_r( sqlsrv_errors(), true));
+			// }
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			// CHECK IF EMAIL IS ALREADY IN USE
+			$email_sql = "SELECT * FROM dbo.cabal_auth_table WHERE Email = '".$email_select."'";
+			if ($result = sqlsrv_query($conn, $email_sql) !== false) {
+				$output = json_encode(array('type' => 'error', 'text' => 'Email em uso !'));
+    		die($output);
+			}else{
+				 die( print_r( sqlsrv_errors(), true));
+			}
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 			$sql = "INSERT INTO dbo.cabal_auth_table (uName, ID, Password, Email, ArcandiusWhatsapp, ArcandiusToken, Login) VALUES (?, ?, PWDENCRYPT(?), ?, ?, ?, ?)";
 			$params = array($fullname, $username, $password, $email, $whatsapp_formated, $token, $login);
@@ -181,6 +203,7 @@
 			unset($_SESSION['user_email']);
 			unset($_SESSION['user_whatsapp']);
 			unset($_SESSION['user_securitykey']);
+			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		// }
 	} else {
     $output = json_encode(array('type' => 'error', 'text' => 'Requisicao indevida, getout !'));

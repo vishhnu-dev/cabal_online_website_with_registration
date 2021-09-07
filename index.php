@@ -274,7 +274,7 @@
         </a>
 
         <!-- Arrow up -->
-        <div class="ancor-up hidden-xs" data-toggle="tooltip" data-placement="left"
+        <div class="ancor-up hidden-xs" data-toggle="tooltip" data-placement="right"
              data-original-title="Voltar ao topo do site.">
             <i class="fa fa-arrow-up"></i>
         </div>
