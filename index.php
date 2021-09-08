@@ -1,6 +1,6 @@
 <?php 
     $title = "Arcandius - Página Inicial | MMORPG Gratuito";
-    $description = "Servidor Brasileiro MMORPG Gratuito com gráficos 3D que contém elementos de jogador contra jogador (PVP) e jogador contra o ambiente (PVE). Faça parte do Universo Arcandius e defenda sua bandeira e honra.";
+    $description = "Servidor Brasileiro MMORPG Gratuito com gráficos 3D que contém elementos de jogador contra jogador (PVP) e jogador contra o ambiente (PVE). Totalmente Gratuito !";
     function generateRandomString($length = 15) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
@@ -30,6 +30,39 @@
 
         <title><?php echo $title ?></title>
         <meta name="description" content="<?php echo $description ?>" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="public/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ff7f50">
+
+        <link rel="canonical" href="http://localhost:8000" />
+        <link rel="apple-touch-icon" sizes="57x57" href="public/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="public/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="public/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="public/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="public/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="public/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="public/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="public/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="public/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="public/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="public/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+        <link rel="manifest" href="public//manifest.json">
+
+        <!-- Facebook Open Graph data -->
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content="http://localhost:8000" />
+        <meta property="og:title" content="<?php echo $title ?>" />
+        <meta property="og:site_name" content="Arcandius MMO" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="<?php echo $description ?>" />
+        <meta property="og:image" content="public/Arcandius.png" />
+        <meta property="og:image:type" content="png" />
+        <meta property="og:image:width" content="206" />
+        <meta property="og:image:height" content="206" />
 
         <!-- Stylesheets -->
         <link rel="stylesheet" href="app/assets/stylesheets/index.css">
@@ -128,7 +161,7 @@
                                 <h2>Não Tem Cadastro?</h2>
                                 <info class="white-color info">Clique abaixo e Registre-se</info>
                                 <br>
-                                <button type="submit" class="btn btn-primary no-bg apply-effect btn-registro">
+                                <button type="submit" class="btn btn-primary no-bg apply-effect btn-registro-account">
                                     <i class="fa fa-user-plus"></i> Criar Conta
                                 </button>
                             </div>
@@ -156,7 +189,7 @@
                         <div class="row">
                             <div class="col-xs-6">
                                 
-                                <button type="submit" class="btn btn-primary apply-effect btn-registro-mob">
+                                <button type="submit" class="btn btn-primary apply-effect btn-registro-account-mob">
                                     <i class="fa fa-user-plus"></i><br>Cadastre-se
                                 </button>
                             </div>

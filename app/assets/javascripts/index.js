@@ -42,7 +42,7 @@ $(document).ready(function(){
 		$('.login-form').hide("slide", { direction: "left" }, 500);
 	});
 
-	$('.btn-login, .btn-login-mob').click(function () {
+	$('.btn-login, .btn-login-mob').click(function (event) {
 		if ( $('.formulario-box').css('display') == 'none' || $('.formulario-box').css("visibility") == "hidden") {
 			$('.newaccount-form').hide("slide", { direction: "left" }, 500);
 			$('.formulario-box').show("slide", { direction: "left" }, 500);
@@ -60,7 +60,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.btn-registro, .btn-registro-mob').click(function () {
+	$('.btn-registro-account, .btn-registro-account-mob').click(function (event) {
 		if ( $('.formulario-box').css('display') == 'none' || $('.formulario-box').css("visibility") == "hidden") {
 			$('.login-form').hide("slide", { direction: "left" }, 500);
 			$('.formulario-box').show("slide", { direction: "left" }, 500);

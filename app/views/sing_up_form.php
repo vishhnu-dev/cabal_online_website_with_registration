@@ -30,7 +30,7 @@
                     <div class="input-group-addon">
                         <i class="fa fa-slack black-color icon-size">*</i>
                     </div>
-                    <input autocomplete="off" name="user_username" type="text" class="form-control required input-lg" id="user_username" placeholder="Username*" data-toggle="tooltip" data-placement="left" data-original-title="Utilizado no Login">
+                    <input autocomplete="off" name="user_username" type="text" class="form-control required input-lg" id="user_username" placeholder="Username*" data-toggle="tooltip" data-placement="left" data-original-title="Min. 6 Caracteres">
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     <div class="input-group-addon">
                         <i class="fa fa-lock black-color icon-size">*</i>
                     </div>
-                    <input autocomplete="off" name="user_password" type="password" class="form-control pass required input-lg" id="user_password" placeholder="Senha*">
+                    <input autocomplete="off" name="user_password" type="password" class="form-control pass required input-lg" id="user_password" placeholder="Senha*" data-toggle="tooltip" data-placement="left" data-original-title="Min. 8 Caracteres">
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@
                             *
                         </i>
                     </div>
-                    <input autocomplete="off" name="user_securytitoken" type="text" class="form-control required input-lg text-lowercase" id="user_securytitoken" placeholder="Chave de segurança*" data-toggle="tooltip" data-placement="left" data-original-title="Seu Token(Apenas Letras) min: 6">
+                    <input autocomplete="off" name="user_securytitoken" type="text" class="form-control required input-lg text-lowercase" id="user_securytitoken" placeholder="Chave de segurança*" data-toggle="tooltip" data-placement="left" data-original-title="Seu Token(Apenas Letras) min 6">
                 </div>
             </div>
         </div>
